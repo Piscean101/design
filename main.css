@@ -1,0 +1,31 @@
+.color {
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1.25px black;
+    font-size: 200%;
+    font-family: 'Segoe UI';
+    padding: 1rem 4rem;
+}
+
+.palette:hover {
+    cursor: pointer;
+}
+
+.paletteBackground {
+    width: 50vw;
+    height: 30%;
+    border-radius: 50px;
+    transform: translateX(-50%);
+    border: 2px solid black;
+}
+
+.paletteInfo {
+    /* position: absolute; */
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    font-family: Impact;
+    letter-spacing: 1px;
+}
