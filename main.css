@@ -49,8 +49,7 @@ body {
 }
 
 .paletteInfo {
-    /* position: absolute; */
-    /* border: 2px solid purple; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,11 +81,21 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     body .paletteBackground {
-        max-width: 220px;
+        width: 200px;
     }
     body .color {
         -webkit-text-stroke: 0.5px black;
+    }
+    body .palette {
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+    body .paletteTitle {
+        position: absolute;
+        top: -10px;
+        font-size: 1.5rem;
     }
 }

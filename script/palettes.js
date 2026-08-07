@@ -9,6 +9,7 @@ export default function addPalette(name='John Doe',p = [],themes=['blank']) {
     paletteInfo.classList.add('paletteInfo')
     
     paletteTitle.innerHTML = name;
+    paletteTitle.classList.add('paletteTitle')
     
     paletteBackground.classList.add('paletteBackground');
     paletteBackground.style.backgroundImage = `linear-gradient(to right, ${p})`;
