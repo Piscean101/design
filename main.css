@@ -1,14 +1,29 @@
+:root {
+    --fontFamily: 'Segoe UI'
+}
 body {
     display: grid;
     place-items: center;
     background-color: #12343B;
+}
+#filter {
+    color: white;
+    font-family: var(--fontFamily);
+}
+.colorFilter {
+    margin: 1rem 2rem;
+    border: 1px solid white;
+}
+.hidden {
+    opacity: 0;
+    display: none;
 }
 .color {
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 1.25px black;
     font-size: 200%;
-    font-family: 'Segoe UI';
+    font-family: var(--fontFamily);
     padding: 0.15vw 3vw;
     margin: 0.15rem;
     border: 0.5px solid grey;
