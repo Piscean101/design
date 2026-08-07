@@ -86,4 +86,7 @@ body {
     body .paletteBackground {
         max-width: 220px;
     }
+    body .color {
+        -webkit-text-stroke: 0.5px black;
+    }
 }
