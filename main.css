@@ -1,10 +1,23 @@
+body {
+    display: grid;
+    place-items: center;
+}
 .color {
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 1.25px black;
     font-size: 200%;
     font-family: 'Segoe UI';
-    padding: 1rem 4rem;
+    padding: 0.15vw 3vw;
+    margin: 0.15rem;
+    border: 0.5px solid grey;
+}
+
+.palette {
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80vw;
 }
 
 .palette:hover {
@@ -15,7 +28,7 @@
     width: 50vw;
     height: 30%;
     border-radius: 50px;
-    transform: translateX(-50%);
+    transform: translateX(-10%);
     border: 2px solid black;
 }
 
