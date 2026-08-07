@@ -58,3 +58,32 @@ body {
     font-family: Impact;
     letter-spacing: 1px;
 }
+
+@media screen and (max-width: 1000px) {
+    body .color {
+        padding: 0.1vw 1vw;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    body .color {
+        font-size: 150%;
+    }
+    body .palette {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    body .paletteBackground {
+        max-width: 250px;
+        transform: none;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body .paletteBackground {
+        max-width: 220px;
+    }
+}
