@@ -14,6 +14,9 @@ body {
     margin: 1rem 2rem;
     border: 1px solid white;
 }
+.colorFilter:hover, .palette:hover, label:hover {
+    cursor: pointer
+}
 .hidden {
     opacity: 0;
     display: none;
@@ -35,10 +38,6 @@ body {
     margin: 1rem;
     padding: 1rem;
     width: 80vw;
-}
-
-.palette:hover {
-    cursor: pointer;
 }
 
 .paletteBackground {
