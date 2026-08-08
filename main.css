@@ -6,6 +6,31 @@ body {
     place-items: center;
     background-color: #12343B;
 }
+#welcomePage {
+    display: grid;
+    place-items: center;
+    padding: 10%;
+}
+.welcomePageBtn {
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: var(--fontFamily);
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+#backBtn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: 2px solid white;
+}
 #filter {
     color: white;
     font-family: var(--fontFamily);
@@ -14,7 +39,7 @@ body {
     margin: 1rem 2rem;
     border: 1px solid white;
 }
-.colorFilter:hover, .palette:hover, label:hover {
+.colorFilter:hover, .palette:hover, label:hover, button:hover {
     cursor: pointer
 }
 .hidden {
@@ -61,7 +86,7 @@ body {
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     body .color {
         padding: 0.1vw 1vw;
     }
