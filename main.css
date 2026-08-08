@@ -18,7 +18,9 @@ body {
     cursor: pointer
 }
 .hidden {
+    position: absolute;
     opacity: 0;
+    height: 0px;
     display: none;
     visibility: hidden;
 }
