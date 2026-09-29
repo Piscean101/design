@@ -4,56 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../main.css" rel="stylesheet" type="text/css"/>
-    <script src="../script/main.js"></script>
+    <script src="../script/layouts.js" type="module"></script>
     <title>Document</title>
 </head>
-<body>
+<body id="layoutPage">
     <a href="../index.html"><button id="backBtn">&lt; Back</button></a>
     <div id="layoutControls" class="layoutContainer">
         <div>
             <span id="layoutPaletteTitle">INSERT HEX CODES: </span>
-            <input type="text" maxlength="42" id="layoutPaletteInput" placeholder="No spaces - separate by commas eg. #ABCDEF,#123456,#GHIJKL etc..">
-            <button>GENERATE</button>
+            <input type="text" maxlength="42" id="layoutPaletteInput" placeholder="no spaces - separate by commas eg. #ABCDEF,#123456,#GHIJKL etc..">
+            <button id="generateLayoutBtn">GENERATE</button>
         </div>
     </div>
     <div id="layoutResults" class="layoutContainer">
         <div id="layoutConstructInput">
-            <input type="radio" name="layout" class="chooseLayout" id="standard" value="Standard">
+            <input type="radio" name="layout" class="chooseLayout" id="standard" value="standard" checked>
             <label for="standard">Standard</label>
-            <input type="radio" name="layout" class="chooseLayout" id="brochure" value="Brochure">
+            <input type="radio" name="layout" class="chooseLayout" id="brochure" value="brochure">
             <label for="brochure">Brochure</label>
-            <input type="radio" name="layout" class="chooseLayout" id="illustrative" value="Illustrative">
+            <input type="radio" name="layout" class="chooseLayout" id="illustrative" value="illustrative">
             <label for="illustrative">Illustrative</label>
-            <input type="radio" name="layout" class="chooseLayout" id="newsletter" value="Newsletter">
+            <input type="radio" name="layout" class="chooseLayout" id="newsletter" value="newsletter">
             <label for="newsletter">Newsletter</label>
-            <input type="radio" name="layout" class="chooseLayout" id="action" value="Action">
+            <input type="radio" name="layout" class="chooseLayout" id="action" value="action">
             <label for="action">Action</label>
-            <input type="radio" name="layout" class="chooseLayout" id="email" value="Email">
+            <!-- <input type="radio" name="layout" class="chooseLayout" id="email" value="Email">
             <label for="email">Email</label>
             <input type="radio" name="layout" class="chooseLayout" id="mobile" value="Mobile">
             <label for="mobile">Mobile</label>
             <input type="radio" name="layout" class="chooseLayout" id="commerce" value="Commerce">
-            <label for="commerce">Commerce</label>
+            <label for="commerce">Commerce</label> -->
         </div>
     
 
 
         <div id="carousel">
 
-            <span>Back</span>
-
             <div id="templateContainer">
 
-                <div id="standardTemplate" class="template">
-                    <div class="tempHead tempObj fourth"><span class="tempTitle third">Header</span></div>
-                    <div class="tempHero tempObj first"><span class="tempTitle third">Hero Section</span></div>
-                    <div class="tempBody tempObj second"></div>
+                <div id="standardTemplate" class="template hidden">
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third">Header</span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempBody tempObj second">Body</div>
+                    <div class="tempFoot tempObj fifth">Footer</div>
+                </div>
+
+                <div id="brochureTemplate" class="template">
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third"></span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div id="firstPage" class="tempBody tempObj second"></div>
+                    <div id="secondPage" class="tempBody tempObj second">Body</div>
                     <div class="tempFoot tempObj fifth"></div>
+                </div>
+
+                <div id="illustrativeTemplate" class="template hidden">
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third"></span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempBody tempObj second">Body</div>
+                    <div class="tempFoot tempObj fifth"></div>
+                </div>
+
+                <div id="newsletterTemplate" class="template hidden">
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third">Header</span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempBody tempObj second">Body</div>
+                    <div class="tempFoot tempObj fifth">Footer</div>
+                </div>
+
+                <div id="actionTemplate" class="template hidden">
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempAction tempObj second">Action</div>
                 </div>
                 
             </div>
-
-            <span>Next</span>
 
         </div>
 
