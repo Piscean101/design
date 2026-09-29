@@ -14,7 +14,6 @@ const handleNavLayouts = (type) => {
 }
 
 navLayoutOptions.forEach((radio) => {
-    if (radio.checked) { handleNavLayouts(radio.value) }
     radio.addEventListener("click", (e) => {
         handleNavLayouts(e.target.value)
     })
@@ -28,10 +27,9 @@ generateLayoutBtn.addEventListener("click", (btn) => {
 
     first.forEach((e) => { e.style.backgroundColor = palette[0] });
     second.forEach((e) => { e.style.backgroundColor = palette[1] });
-    // third.forEach((e) => { e.style.color = palette[2] });
-    allLayoutObj.forEach((e) => { e.style.color = palette[2] })
-    paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3] }) : fourth.forEach((e) => { e.style.backgroundColor = palette[1] });
-    paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[0] });
+    allLayoutObj.forEach((e) => { e.style.color = palette[2] });
+    paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; second.forEach((s) => { s.style.color = palette[0] }) }) : fourth.forEach((e) => { e.style.backgroundColor = palette[1] });
+    paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[0] });
 
 });
 

@@ -12,7 +12,7 @@
     <div id="layoutControls" class="layoutContainer">
         <div>
             <span id="layoutPaletteTitle">INSERT HEX CODES: </span>
-            <input type="text" maxlength="42" id="layoutPaletteInput" placeholder="no spaces - separate by commas eg. #ABCDEF,#123456,#GHIJKL etc..">
+            <input type="text" maxlength="39" id="layoutPaletteInput" placeholder="no spaces - separate by commas eg. #ABCDEF,#123456,#GHIJKL etc..">
             <button id="generateLayoutBtn">GENERATE</button>
         </div>
     </div>
@@ -42,18 +42,19 @@
 
             <div id="templateContainer">
 
-                <div id="standardTemplate" class="template hidden">
+                <div id="standardTemplate" class="template">
                     <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third">Header</span></div>
                     <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
                     <div class="tempBody tempObj second">Body</div>
                     <div class="tempFoot tempObj fifth">Footer</div>
                 </div>
 
-                <div id="brochureTemplate" class="template">
+                <div id="brochureTemplate" class="template hidden">
                     <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third"></span></div>
                     <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
                     <div id="firstPage" class="tempBody tempObj second"></div>
                     <div id="secondPage" class="tempBody tempObj second">Body</div>
+                    <div id="thirdPage" class="tempBody tempObj second">Body</div>
                     <div class="tempFoot tempObj fifth"></div>
                 </div>
 
