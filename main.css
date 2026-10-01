@@ -134,11 +134,13 @@ body {
     color: black; 
     position: absolute; 
     display: grid; 
-    place-items: center; 
+    place-items: center;
+    font-size: 125%; 
+    font-weight: bold;
 }
 
 
-#standardTemplate { width: 60vw; height: 65vh; position: relative; right: 50%; transform: translateX(25%); }
+#standardTemplate { width: 55vw; height: 65vh; position: relative; right: 50%; transform: translateX(25%); }
 #standardTemplate .tempHead { top: 0; height: 10%; width: 100% }
 #standardTemplate .tempHero { top: 10%; height: 50%; width: 100% }
 #standardTemplate .tempBody { top: 60%; height: 30%; width: 100% }
@@ -148,7 +150,7 @@ body {
 #brochureTemplate .tempObj { position: absolute; }
 #brochureTemplate .tempHead { top: 0; width: 25%; aspect-ratio: 1; z-index:1 ; left: 1rem; top: 1rem }
 #brochureTemplate .tempHero { bottom: 1rem; left:1rem; height: 60%; width: 40%; z-index: 1 }
-#brochureTemplate .tempFoot { top: 1rem; height: 15%; right: 1rem; width: 43%; z-index: 2 }
+#brochureTemplate .tempFoot { top: 1rem; height: 15%; right: 0.75rem; width: 45%; z-index: 2 }
 #brochureTemplate #firstPage { bottom: 0; height: 100%; width: 50%; z-index: 0; border: 1px solid rgb(40, 40, 40); box-sizing: border-box; }
 #brochureTemplate #secondPage { bottom: 0; height: 100%; width: 50%; right: 0; z-index: 0; border: 1px solid rgb(40, 40, 40); box-sizing: border-box }
 #brochureTemplate #thirdPage { bottom: 0; height: 100%; width: 50%; right: -50%; z-index: 0; border: 1px solid rgb(40, 40, 40); box-sizing: border-box }
@@ -165,12 +167,17 @@ body {
 #newsletterTemplate .tempHead { top: 2%; height: 25%; width: 90% }
 #newsletterTemplate .tempHero { top: 30%; height: 50%; width: 90% }
 #newsletterTemplate .tempBody { bottom: 7%; height: 20%; width: 90% }
-#newsletterTemplate .tempFoot { bottom: 1%; height: 4%; width: 90% }
+#newsletterTemplate .tempFoot { bottom: 1%; height: 4%; width: 90%; }
 
 #actionTemplate { width: 60vw; height: 65vh; position: relative; right: 50%; transform: translateX(25%); }
 #actionTemplate .tempObj { position: absolute }
 #actionTemplate .tempHero { top: 0; left: 0; height: 100%; width: 100%; z-index: 1 }
 #actionTemplate .tempAction { bottom: 1rem; bottom: 2rem; height: 20%; width: 60% ; z-index: 2; left: 50%; transform: translateX(-50%); }
+
+#blendTemplate { width: 60vw; height: 65vh; position: relative; right: 50%; transform: translateX(25%); }
+#blendTemplate .tempObj { position: absolute }
+#blendTemplate .tempHero { top: 0; left: 0; height: 100%; width: 100%; z-index: 1 }
+#blendTemplate .tempAction { bottom: 1rem; bottom: 2rem; height: 20%; width: 60% ; z-index: 2; left: 50%; transform: translateX(-50%); }
 
 #generateLayoutBtn {
     color: green;
