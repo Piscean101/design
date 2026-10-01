@@ -4,12 +4,12 @@ const navLayoutOptions = document.querySelectorAll(".chooseLayout");
 const templates = document.querySelectorAll(".template");
 
 const handleNavLayouts = (type) => {
-    if (localStorage.getItem("layoutType") == type) { return }
     let current = [...templates].filter((template) => { return !template.classList.contains('hidden') })
     let target = document.getElementById(`${type}Template`);
-    if (current == target) { return }
-    target.classList.remove('hidden');
     current[0].classList.add('hidden');
+    if (localStorage.getItem("layoutType") == type) { current = target }
+    target.classList.remove('hidden');
+    target.classList.remove('hidden');
     localStorage.setItem("layoutType",type);
 }
 
