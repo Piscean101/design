@@ -31,7 +31,7 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     first.forEach((e) => {
         e.style.backgroundImage = '';
     })
-    if (templateName == 'blend') {
+    if (templateName == 'canvas') {
         first.forEach((e) => { 
             e.style.backgroundImage = `linear-gradient(to bottom, ${palette[0]},${palette[2]},${palette[2]},${palette[2]},${palette[2]}`;
             allLayoutObj.forEach((e) => { e.style.color = palette[0] });
