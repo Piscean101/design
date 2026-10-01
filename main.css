@@ -179,6 +179,14 @@ body {
 #canvasTemplate .tempHero { top: 0; left: 0; height: 100%; width: 100%; z-index: 1 }
 #canvasTemplate .tempAction { bottom: 1rem; bottom: 2rem; height: 20%; width: 60% ; z-index: 2; left: 50%; transform: translateX(-50%); }
 
+#galleryTemplate { width: 52vw; height: auto; position: relative; left: 50%; transform: translateX(-70%); top: 5vw; }
+#galleryTemplate .tempHead { top: 0; height: 10%; width: 100%; position: relative }
+body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: flex; justify-content: center; flex-wrap: wrap; overflow-y: scroll }
+#galleryTemplate .tempTitle { position: relative; top: 1rem }
+#galleryTemplate .tempHero .galleryBlock { width: 20vw; aspect-ratio: 1; position: relative; z-index: 4; margin: 1rem; top: 15vw }
+#galleryTemplate .tempBody { top: 60%; height: 30%; width: 100% }
+#galleryTemplate .tempFoot { bottom: 0; height: 10%; width: 100% }
+
 #generateLayoutBtn {
     color: green;
     padding: 1rem;

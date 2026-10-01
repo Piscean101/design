@@ -12,7 +12,7 @@
     <div id="layoutControls" class="layoutContainer">
         <div>
             <span id="layoutPaletteTitle">INSERT HEX CODES: </span>
-            <input type="text" maxlength="39" id="layoutPaletteInput" placeholder="eg. #ABCDEF,#123456,#GHIJKL etc..">
+            <input type="text" maxlength="47" id="layoutPaletteInput" placeholder="eg. #ABCDEF,#123456,#GHIJKL etc..">
             <button id="generateLayoutBtn">GENERATE</button>
         </div>
     </div>
@@ -30,6 +30,8 @@
             <label for="action">Action</label>
             <input type="radio" name="layout" class="chooseLayout" id="canvas" value="canvas">
             <label for="canvas">Canvas<label>
+            <input type="radio" name="layout" class="chooseLayout" id="gallery" value="gallery">
+            <label for="gallery">Gallery<label>
             <!-- <input type="radio" name="layout" class="chooseLayout" id="email" value="Email">
             <label for="email">Email</label>
             <input type="radio" name="layout" class="chooseLayout" id="mobile" value="Mobile">
@@ -45,15 +47,15 @@
             <div id="templateContainer">
 
                 <div id="standardTemplate" class="template">
-                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third">Header</span></div>
-                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj">Header</span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
                     <div class="tempBody tempObj second">Body</div>
                     <div class="tempFoot tempObj fifth">Footer</div>
                 </div>
 
                 <div id="brochureTemplate" class="template hidden">
-                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third"></span></div>
-                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj"></span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
                     <div id="firstPage" class="tempBody tempObj second"></div>
                     <div id="secondPage" class="tempBody tempObj second">Body</div>
                     <div id="thirdPage" class="tempBody tempObj second">Body</div>
@@ -61,26 +63,44 @@
                 </div>
 
                 <div id="illustrativeTemplate" class="template hidden">
-                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third"></span></div>
-                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj"></span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
                     <div class="tempBody tempObj second">Body</div>
                     <div class="tempFoot tempObj fifth"></div>
                 </div>
 
                 <div id="newsletterTemplate" class="template hidden">
-                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj third">Header</span></div>
-                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj">Header</span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
                     <div class="tempBody tempObj second">Body</div>
                     <div class="tempFoot tempObj fifth">Footer</div>
                 </div>
 
                 <div id="actionTemplate" class="template hidden">
-                    <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                    <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
                     <div class="tempAction tempObj second">Action</div>
                 </div>
 
                 <div id="canvasTemplate" class="template hidden">
                     <div class="tempHero tempObj first"><span class="tempTitle tempObj third">Hero Section</span></div>
+                </div>
+
+                <div id="galleryTemplate" class="template hidden">
+                    <div class="tempHead tempObj first"><span class="tempTitle tempObj">Title</span></div>
+                    <div class="tempHero first">
+                        <div class="galleryBlock second"></div>
+                        <div class="galleryBlock second"></div>
+                        <div class="galleryBlock third"></div>
+                        <div class="galleryBlock third"></div>
+                        <div class="galleryBlock fourth"></div>
+                        <div class="galleryBlock fourth"></div>
+                        <div class="galleryBlock fifth"></div>
+                        <div class="galleryBlock fifth"></div>
+                        <div class="galleryBlock sixth"></div>
+                        <div class="galleryBlock sixth"></div>
+                    </div>
+                    <!-- <div class="tempBody tempObj second">Body</div> -->
+                    <!-- <div class="tempFoot tempObj fifth">Footer</div> -->
                 </div>
                 
             </div>
