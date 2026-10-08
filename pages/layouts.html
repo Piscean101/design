@@ -8,7 +8,7 @@
     <title>Design Templates</title>
 </head>
 <body id="layoutPage">
-    <a href="../index.html"><button id="backBtn">&lt; Back</button></a>
+    <a href="./palettes.html"><button id="backBtn">&lt; Palettes</button></a>
     <div id="layoutControls" class="layoutContainer">
         <div>
             <span id="layoutPaletteTitle">INSERT HEX CODES: </span>
@@ -25,7 +25,7 @@
             <input type="radio" name="layout" class="chooseLayout" id="illustrative" value="illustrative">
             <label for="illustrative">Illustrative</label>
             <input type="radio" name="layout" class="chooseLayout" id="newsletter" value="newsletter">
-            <label for="newsletter">Newsletter</label>
+            <label for="newsletter">Email</label>
             <input type="radio" name="layout" class="chooseLayout" id="action" value="action">
             <label for="action">Action</label>
             <input type="radio" name="layout" class="chooseLayout" id="canvas" value="canvas">
@@ -63,16 +63,19 @@
                 </div>
 
                 <div id="illustrativeTemplate" class="template hidden">
-                    <div class="tempHead tempObj fourth"><span class="tempTitle tempObj"></span></div>
+                    <div class="tempHead tempObj fourth">
+                        <div class="tempFoot tempObj fifth"></div>
+                        <span class="tempTitle tempObj"></span></div>
                     <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
                     <div class="tempBody tempObj second">Body</div>
-                    <div class="tempFoot tempObj fifth"></div>
+                    <!-- <div class="tempFoot tempObj fifth"></div> -->
                 </div>
 
                 <div id="newsletterTemplate" class="template hidden">
                     <div class="tempHead tempObj fourth"><span class="tempTitle tempObj">Header</span></div>
                     <div class="tempHero tempObj first"><span class="tempTitle tempObj">Hero Section</span></div>
-                    <div class="tempBody tempObj second">Body</div>
+                    <div class="tempBody1 tempObj second">Body</div>
+                    <div class="tempBody2 tempObj first">Body</div>
                     <div class="tempFoot tempObj fifth">Footer</div>
                 </div>
 
