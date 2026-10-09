@@ -1,5 +1,7 @@
 import addPalette from './palettes.js';
 
+// ADD FAVOURITES FEATURE
+
 const colorFilterBtns = document.querySelectorAll(".colorFilter");
 const palettes = document.querySelectorAll(".palette");
 

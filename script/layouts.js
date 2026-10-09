@@ -54,11 +54,15 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     }
     second.forEach((e) => { e.style.backgroundColor = palette[1] });
     third.forEach((e) => { e.style.backgroundColor = palette[2] });
-    console.log(paletteLength)
     paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; second.forEach((s) => { s.style.color = palette[0] }) }) : fourth.forEach((e) => { e.style.backgroundColor = palette[1] });
-    paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[0] });
+    paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[2] });
     paletteLength >= 6 ? sixth.forEach((e) => { e.style.backgroundColor = palette[5]; e.style.color = palette[1] }) : sixth.forEach((e) => { e.style.backgrondColor = palette[2] });
-    fifth.forEach((e) => { e.style.color = palette[0] })
+    fifth.forEach((e) => { e.style.color = palette[2] })
+    if (templateName == 'standard') {
+        fourth.forEach((e) => {
+            e.style.color = palette[1];
+        })
+    }
 });
 
 const layout = () => {}

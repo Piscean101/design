@@ -152,7 +152,7 @@ body {
 
 
 #standardTemplate { width: 60vw; height: 65vh; position: relative; left: 50%; transform: translateX(-70%); }
-#standardTemplate .tempHead { top: 0; height: 5%; width: 100%; font-size: 80% }
+#standardTemplate .tempHead { top: 0; height: 5%; width: 100%; font-size: 60% }
 #standardTemplate .tempHero { top: 5%; height: 55%; width: 100% }
 #standardTemplate .tempBody { top: 60%; height: 35%; width: 100% }
 #standardTemplate .tempFoot { bottom: 0; height: 5%; width: 100%; font-size: 80% }
