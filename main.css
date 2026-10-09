@@ -199,12 +199,25 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
 #galleryTemplate .tempBody { top: 60%; height: 30%; width: 100% }
 #galleryTemplate .tempFoot { bottom: 0; height: 10%; width: 100% }
 
+#layoutControls {
+    position: relative;
+    top: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+#layoutConstructInput {
+    font-size: 1.5rem;
+}
+
 #generateLayoutBtn {
     color: var(--secondaryColor);
-    padding: 1.2rem 2rem;
+    padding: 0.7rem rem;
     border: 2px solid var(--secondaryColor);
     background-color: var(--mainColor);
+    position: absolute;
     font-weight: bold;
+    right: 0;
+    height: 100%;
 }
 
 #layoutPage { color: white; font-family: Impact; letter-spacing: 0.25px; }
@@ -237,6 +250,12 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
     }
     #brochureTemplate .tempHero {
         font-size: 100%;
+    }
+    #brochureTemplate {
+        width: 250%;
+    }
+    #generateLayoutBtn {
+        bottom: 100%;
     }
 }
 
