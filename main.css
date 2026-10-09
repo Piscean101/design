@@ -252,6 +252,7 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
         font-size: 100%;
     }
     #brochureTemplate {
+        left: 0rem;
         width: 250%;
     }
     #generateLayoutBtn {
