@@ -27,8 +27,8 @@ export default function addPalette(name='John Doe',p = [],themes=['blank']) {
 
     function savePalette(pal = p,name=null) {
         navigator.clipboard.writeText(pal);
-        const navChoice = confirm(`Copied ${name} to clipboard. Continue on this page?`);
-        navChoice ? null : backClick.click();
+        const navChoice = confirm(`Copied ${name} to clipboard. Move to Layout page?`);
+        navChoice ? backClick.click() : null;
     }
 
     newPalette.addEventListener("click", (e) => {
