@@ -31,14 +31,26 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     first.forEach((e) => {
         e.style.backgroundImage = '';
     })
-    if (templateName == 'canvas') {
-        first.forEach((e) => { 
-            e.style.backgroundImage = `linear-gradient(to bottom, ${palette[0]},${palette[2]},${palette[2]},${palette[2]},${palette[2]}`;
-            allLayoutObj.forEach((e) => { e.style.color = palette[0] });
-        });
-    } else {
+    // if (templateName == 'canvas') {
+    //     first.forEach((e) => { 
+    //         // e.style.backgroundImage = `linear-gradient(to bottom, ${palette[0]},${palette[2]},${palette[2]},${palette[2]},${palette[2]}`;
+    //         e.style.backgrondcolor = palette[2];
+    //         allLayoutObj.forEach((e) => { e.style.color = palette[0] });
+    //     });
+    // } else {
         first.forEach((e) => { e.style.backgroundColor = palette[0] });
         allLayoutObj.forEach((e) => { e.style.color = palette[2] });
+    // }
+    if (templateName == 'canvas') {
+        first.forEach((e) => { 
+            e.style.backgroundColor = palette[2];
+            e.style.boxShadow = `0px 0px 18px 8px ${palette[0]} inset`;
+        });
+        allLayoutObj.forEach((e) => { e.style.color = palette[0] });
+    } else {
+        first.forEach((e) => { 
+            e.style.boxShadow = ``;
+        });
     }
     second.forEach((e) => { e.style.backgroundColor = palette[1] });
     third.forEach((e) => { e.style.backgroundColor = palette[2] });
@@ -46,7 +58,7 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; second.forEach((s) => { s.style.color = palette[0] }) }) : fourth.forEach((e) => { e.style.backgroundColor = palette[1] });
     paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[0] });
     paletteLength >= 6 ? sixth.forEach((e) => { e.style.backgroundColor = palette[5]; e.style.color = palette[1] }) : sixth.forEach((e) => { e.style.backgrondColor = palette[2] });
-
+    fifth.forEach((e) => { e.style.color = palette[0] })
 });
 
 const layout = () => {}
