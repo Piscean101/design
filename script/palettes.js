@@ -124,7 +124,7 @@ addPalette('Museum',['#D79922','#EFE2BA','#F13C20','#4056A1','#C5CBE3'],['Beige'
 addPalette('Minty Fresh',['#4CB69F','#F5F5F5','#201D3A'],['Green','White']);
 addPalette('Nautical',['#0E7490','#06B6D4','#F59E0B','#ECFEFF','#164E63'],['Blue','Yellow']);
 addPalette('Neutral Elegance',['#FFDBBB','#CCBEB1','#997E67','#664930'],['Beige','Grey','Pink']);
-addPalette('Passion',['#60241E','#95271D','#B34A44','#E77B49'],['Red','Pink']);
+addPalette('Passion',['#60241E','#95271D','#B34A44','#E77B49'],['Beige','Pink']);
 addPalette('Pastel',['#DEA6AF','#8CBCD0','#E6DBC9'],['Blue','Pink']);
 addPalette('Photographic Memory',['#3D7C47','#0986B8','#76C1D4','#F7F7F7'],['Blue','Green','White']);
 addPalette('Playful',['#4ABDAC','#FC4A1A','#F7B733','#DFDCE3'],['Blue','Grey','Orange','Yellow']);
@@ -132,7 +132,7 @@ addPalette('Precious Metals',['#BD8C7D','#D1BFA7','#8E8E90','#49494B'],['Grey','
 addPalette('Punch',['#393939','#FF5A09','#EC7F37','#BE4F0C'],['Grey','Orange']);
 addPalette('Purple 90s',['#A0D2EB','#E5EAF5','#D0BDF4','#8458B3','#494D5F'],['Blue','Purple']);
 addPalette('Retro Gaming',['#8B5CF6','#EC4899','#06B6D4','#1E1B4B','#F5F3FF'],['Blue','Pink','Purple']);
-addPalette('Rose Quartz',['#64242F','#B44446','#FC8F8F','#DFD9D8'],['Grey','Red','Pink']);
+addPalette('Rose Quartz',['#64242F','#B44446','#FC8F8F','#DFD9D8'],['Grey','Pink']);
 addPalette('Royal Glimmer',['#AD7C4B','#293C7C','#812B4A','#C7984F','#024944'],['Beige','Blue','Green','Purple']);
 addPalette('Royal Palace',['#345C32','#9CAC54','#A7F0DD','#97CD97'],['Blue','Green']);
 addPalette('Sapphire',['#0474C4','#5379AE','#2C444C','#A8C4EC','#064575','#262B40'],['Blue']);
@@ -151,7 +151,7 @@ addPalette('Under the Sea',['#000000','#001F3F','#003366','#004C99','#0066CC'],[
 addPalette('Urban Slate',['#E9E6E7','#5E5653','#6B7C98','#7B7F8A','#AB878C'],['Grey','White']);
 addPalette('Valentine',['#FFF5D7','#FF5E6C','#FEB300','#FFAAAB'],['Pink','Yellow']);
 addPalette('Vibrant',['#E43D12','#D6536D','#FFA2B6','#EFB11D','#EBE9E1'],['Orange','Pink','Yellow']);
-addPalette('Warm Cranberry',['#810B38','#F1E2D1','#DCC3AA','#541A1A'],['Beige','Red']);
+addPalette('Warm Cranberry',['#810B38','#F1E2D1','#DCC3AA','#541A1A'],['Beige','Purple']);
 addPalette('Wonderful Weekend',['#5003c0','#AB03A9','#FF467A','#FFD51E'],['Pink','Purple','Yellow']);
 addPalette('White Space',['#FCEED1','#7D3CFF','#FFFFFF','#F2D53C','#C80E13'],['Red','Purple','White','Yellow']);
 addPalette('Woodland',['#9F7560','#9E9E9E','#525034','#AAD31E','#D4AF9F'],['Beige','Green','Grey']);

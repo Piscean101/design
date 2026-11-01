@@ -70,18 +70,19 @@ body {
     border: 0.5px solid grey;
 }
 .palette {
-    border: 2px solid black;
-    background-color: white;
+    border: 5px solid black;
+    background-color: rgb(234, 234, 234);
     margin: 1rem;
     padding: 1.75rem 2.5rem;
     width: 80vw;
 }
 .paletteBackground {
-    width: 50vw;
-    height: 30%;
-    border-radius: 50px;
-    transform: translateX(-10%);
+    width: 45vw;
+    height: 45%;
+    border-radius: 45px;
+    transform: translateX(-4.5%);
     border: 2px solid black;
+    box-shadow: 0px 0px 4px 1px black;
 }
 .paletteInfo {
     width: 100%;
@@ -91,6 +92,9 @@ body {
     height: 5rem;
     font-family: Impact;
     letter-spacing: 1px;
+}
+.paletteTitle {
+    letter-spacing: 1.2px;
 }
 
 
