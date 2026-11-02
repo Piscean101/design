@@ -113,7 +113,7 @@ body {
 }
 #carousel { display: flex; align-items: center }
 #templateContainer {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 35vw;
     overflow: visible;
     aspect-ratio: 1;
