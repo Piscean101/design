@@ -162,7 +162,7 @@ body {
 #standardTemplate .tempBody { top: 60%; height: 35%; width: 100% }
 #standardTemplate .tempFoot { bottom: 0; height: 5%; width: 100%; font-size: 80% }
 
-#brochureTemplate { width: 160%; left: -50%; height: 70vh; top: 5%; }
+#brochureTemplate { width: 160%; height: 70vh; top: 5%; left: 50%; transform: translateX(-55%); }
 #brochureTemplate .tempObj { position: absolute; }
 #brochureTemplate .tempHead { top: 0; width: 45%; aspect-ratio: 1; z-index:1 ; left: 0.5rem; top: 1rem }
 #brochureTemplate .tempHero { bottom: 1rem; left:0.5rem; height: 60%; width: 45%; z-index: 1; padding: 1rem; box-sizing: border-box;}
@@ -170,6 +170,7 @@ body {
 #brochureTemplate #firstPage { bottom: 0; height: 100%; width: 50%; z-index: 0; border: 2px solid rgb(40, 40, 40); box-sizing: border-box; }
 #brochureTemplate #secondPage { bottom: 0; height: 100%; width: 50%; right: 0; z-index: 0; border: 2px solid rgb(40, 40, 40); box-sizing: border-box }
 #brochureTemplate #thirdPage { bottom: 0; height: 100.5%; width: 50%; right: -50%; z-index: 0; border: 3px solid black; box-sizing: border-box }
+#brochureTemplate .fourth { overflow: visible }
 
 #illustrativeTemplate { width: 60vw; height: 70vh; position: relative; left: 50; transform: translateX(-25%);}
 #illustrativeTemplate .tempObj { position: absolute; }
@@ -237,6 +238,10 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
 
 
 @media screen and (max-width: 1000px) {
+
+    .tempObj {
+        overflow-x: visible;
+    }
     body .color {
         font-size: 130%;
     }
@@ -258,6 +263,7 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
     }
     #brochureTemplate {
         width: 250%;
+        left: 100%;
     }
     #generateLayoutBtn {
         bottom: 100%;

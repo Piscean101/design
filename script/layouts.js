@@ -18,7 +18,12 @@ navLayoutOptions.forEach((radio) => {
         handleNavLayouts(e.target.value)
         generateLayoutBtn.click();
     })
-})
+});
+
+layoutPaletteInput.addEventListener("click", async function(e) {
+    const text = await navigator.clipboard.readText();
+    e.target.value = text;
+});
 
 generateLayoutBtn.addEventListener("click", (btn) => {
     const palette = layoutPaletteInput.value.split(',');
