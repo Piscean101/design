@@ -115,6 +115,7 @@ body {
 #templateContainer {
     /* border: 1px solid orange; */
     width: 35vw;
+    overflow: visible;
     aspect-ratio: 1;
     position: relative;
     display: grid;
@@ -262,8 +263,8 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
         font-size: 100%;
     }
     #brochureTemplate {
-        width: 250%;
-        left: 100%;
+        width: 350%;
+        left: 250%;
     }
     #generateLayoutBtn {
         bottom: 100%;
