@@ -277,7 +277,7 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
 
 
 @media screen and (max-width: 700px) {
-    .tempObj { font-size: 160% }
+    .tempObj { font-size: 150% }
     body .paletteBackground {
         width: 200px;
     }
@@ -294,12 +294,13 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
         top: -10px;
         font-size: 1.5rem;
     }
-    #actionTemplate, #canvasTemplate {
+    #actionTemplate, #canvasTemplate, #illustrativeTemplate {
         width: 85vw;
         transform: translateX(20%);
     }
-    #illustrativeTemplate, #standardTemplate {
+    #standardTemplate {
         width: 85vw;
+        transform: translateX(-80%);
     }
     #newsletterTemplate, #galleryTemplate {
         width: 70vw;
@@ -309,5 +310,9 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
         transform: translate(25%, 45%);
     }
     #newsletterTemplate .tempFoot { font-size: 90% }
+
+    #illustrativeTemplate .tempFoot { font-size: 120% }
+    #illustrativeTemplate .tempHead { font-size: 120% }
+
 
 }
