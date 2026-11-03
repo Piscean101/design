@@ -38,8 +38,8 @@ body {
     position: absolute;
     opacity: 0;
     height: 0px;
+    width: 0px;
     display: none;
-    visibility: hidden;
 }
 
 
@@ -75,6 +75,13 @@ body {
     margin: 1rem;
     padding: 1.75rem 2.5rem;
     width: 80vw;
+}
+.palette.hidden {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    display: none;
 }
 .paletteBackground {
     width: 45vw;
@@ -167,7 +174,7 @@ body {
 #brochureTemplate .tempObj { position: absolute; }
 #brochureTemplate .tempHead { top: 2px; left: 100.5%; height: 20%; width: 49%; aspect-ratio: 1; z-index:1}
 #brochureTemplate .tempHero { bottom: 2px; left:0.5%; height: 60%; width: 49%; z-index: 1; padding: 1rem; box-sizing: border-box;}
-#brochureTemplate .tempFoot { top: 2px; left: 50.5%; height: 20%; width: 49%; z-index: 2 }
+#brochureTemplate .tempFoot { top: 0px; left: 50.5%; height: 20%; width: 49%; z-index: 2 }
 #brochureTemplate #firstPage { bottom: 0; height: 100%; width: 50%; z-index: 0; border: 2px solid rgb(40, 40, 40); box-sizing: border-box; }
 #brochureTemplate #secondPage { bottom: 0; height: 100%; width: 50%; right: 0; z-index: 0; border: 2px solid rgb(40, 40, 40); box-sizing: border-box }
 #brochureTemplate #thirdPage { bottom: 0; height: 100.5%; width: 50%; right: -50%; z-index: 0; border: 3px solid black; box-sizing: border-box }
