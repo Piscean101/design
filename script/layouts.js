@@ -30,28 +30,30 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     var templateName = [...navLayoutOptions].filter((e) => { return e.checked });
     templateName = templateName[0].id;
     const paletteLength = palette.length;
-    const [first,second,third,fourth,fifth,sixth] = [document.querySelectorAll(".first"),document.querySelectorAll(".second"),document.querySelectorAll(".third"),document.querySelectorAll(".fourth"),document.querySelectorAll(".fifth"),document.querySelectorAll('.sixth')]
+    const [first,second,third,fourth,fifth,sixth,spec] = [document.querySelectorAll(".first"),document.querySelectorAll(".second"),document.querySelectorAll(".third"),document.querySelectorAll(".fourth"),document.querySelectorAll(".fifth"),document.querySelectorAll('.sixth'),document.querySelectorAll('.spec')]
     const allLayoutObj = document.querySelectorAll(".tempObj");
 
     first.forEach((e) => {
         e.style.backgroundImage = '';
     })
-    // if (templateName == 'canvas') {
-    //     first.forEach((e) => { 
-    //         // e.style.backgroundImage = `linear-gradient(to bottom, ${palette[0]},${palette[2]},${palette[2]},${palette[2]},${palette[2]}`;
-    //         e.style.backgrondcolor = palette[2];
-    //         allLayoutObj.forEach((e) => { e.style.color = palette[0] });
-    //     });
-    // } else {
-        first.forEach((e) => { e.style.backgroundColor = palette[0] });
-        allLayoutObj.forEach((e) => { e.style.color = palette[2] });
-    // }
-    if (templateName == 'canvas') {
-        first.forEach((e) => { 
-            e.style.backgroundColor = palette[2];
-            e.style.boxShadow = `0px 0px 18px 8px ${palette[0]} inset`;
-        });
-        allLayoutObj.forEach((e) => { e.style.color = palette[0] });
+    allLayoutObj.forEach((e) => { 
+        e.style.color = palette[2];
+        // e.style['-webkit-text-stroke'] = `1px ${palette[2]}`;
+    }); 
+    first.forEach((e) => { 
+        e.style.backgroundColor = palette[0];
+        e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
+    });
+    second.forEach((e) => {
+        e.style['-webkit-text-stroke'] = `2px ${palette[2]}`;
+    });
+    fourth.forEach((e) => {
+        e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
+    });
+    fifth.forEach((e) => {
+        e.style['-webkit-text-stroke'] = `1px ${palette[2]}`;
+    });
+    if (templateName == 'focus') {
     } else {
         first.forEach((e) => { 
             e.style.boxShadow = ``;
@@ -63,14 +65,25 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[2] });
     paletteLength >= 6 ? sixth.forEach((e) => { e.style.backgroundColor = palette[5]; e.style.color = palette[1] }) : sixth.forEach((e) => { e.style.backgrondColor = palette[2] });
     fifth.forEach((e) => { e.style.color = palette[0] })
-    if (templateName == 'standard') {
-        fourth.forEach((e) => {
-            e.style.color = palette[1];
-        });
+    switch(templateName) {
+        case 'standard': 
+            fourth.forEach((e) => {
+                e.style.color = palette[1];
+            });
+        break;
+        case 'focus':
+            first.forEach((e) => { 
+                e.style.backgroundColor = palette[2];
+                e.style.boxShadow = `0px 0px 18px 8px ${palette[0]} inset`;
+                e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
+
+            });
+            spec.forEach((e) => {
+                e.style.color = palette[1];
+            })
+        break;
+        default: break;
     }
-    // fifth.forEach((e) => {
-    //     e.style.color = palette[0];
-    // })
 });
 
 const layout = () => {}
