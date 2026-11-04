@@ -55,9 +55,12 @@ function statistics() {
     console.log(colorMap);
 }
 
+// BROWSE AND TEST A LIBRARY OF EVOCATIVE COLOR SCHEMES
+// RED PINK WHITE BLACK GREEN PURPLE
+
 addPalette('Amethyst Haze',['#341C67','#472F5B','#DCCE40','#C4AEF4','#CCA4B4'],['Purple','Yellow']);
 addPalette('Apricot',['#6B7A8F','#F7882F','#F7C331','#DCC7AA'],['Orange','Grey','Yellow']);
-addPalette('Autumn Harvest',['#B45309','#92400E','#EAB308','#FEF3C7','#451A03'],['Beige','Orange','Yellow']);
+addPalette('Autumn Harvest',['#B45309','#92400E','#EAB308','#FEF3C7','#451A03'],['Beige','Yellow']);
 addPalette('Banking and Finance',['#082F49','#0E7490','#22C55E','#BAE6FD','#F0FDFF'],['Blue','Green']);
 addPalette('Black Rose',['#000000','#3B0A0A','#761515','#B12020','#EC2B2B'],['Black','Red']);
 addPalette('Block Party',['#FBF579','#005995','#FA625F','#000000','#600473'],['Black','Blue','Pink','Purple','Yellow']);
@@ -84,7 +87,7 @@ addPalette('Driftwood Pearl',['#BC7B6F','#5A322A','#CCCDC7','#E4A499','#7A8A9E']
 addPalette('Earthy and Serene',['#3E362E','#865D36','#93785B','#AC8968','#A69080'],['Beige']);
 addPalette('Easter Egg',['#8BF0BA','#0E0FED','#94F0F1','#F2B1D8','#FFDC6A'],['Blue','Pink','Yellow']);
 addPalette('Easy Warm',['#CAE4DB','#DCAE1D','#00303F','#7A9D96'],['Grey','Yellow']);
-addPalette('Elegant',['#EDC7B7','#EEE2DC','#BAB2B5','#123C69','#AC3B61'],['Blue','Grey','Pink']);
+addPalette('Elegant',['#EDC7B7','#EEE2DC','#BAB2B5','#123C69','#AC3B61'],['Beige','Blue','Grey','Red']);
 addPalette('Emerald Lake',['#248C54','#89618E','#95DCE4'],['Blue','Green','Purple']);
 addPalette('Entertainment',['#EB1736','#5252D4','#7575DD','#781A44'],['Blue','Purple','Red']);
 addPalette('Environment',['#9BC400','#8076A3','#F9C5BD','#7C677F'],['Green','Pink','Purple']);
@@ -143,7 +146,7 @@ addPalette('Sleepy Green',['#7DCE94','#3D3D3F','#F6F5F3','#F9F8FD'],['Green','Gr
 addPalette('Sorbet',['#FF6A1B','#FFDA62','#FFAE56','#F5788B'],['Orange','Pink','Yellow']);
 addPalette('Striking',['#0B0C10','#1F2833','#C5C6C7','#66FCF1','#45A29E'],['Black','Blue','Grey']);
 addPalette('Subtle',['#ACB7AE','#82716E','#E4DECD','#C2B490'],['Beige','Grey']);
-addPalette('Sunset',['#5003c0','#AB03A9','#FF467A','#FFD51E'],['Pink','Purple','Yellow']);
+addPalette('Sunset',['#5003C0','#AB03A9','#FF467A','#FFD51E'],['Pink','Purple','Yellow']);
 addPalette('Swiss',['#EF4444','#1F2937','#F9FAFB','#000000'],['Black','Red','White']);
 addPalette('Tropical Heat',['#00CEC8','#FCEFC3','#FF9C5F','#EB4203'],['Blue','Orange']);
 addPalette('Tropical Vibe',['#10B981','#F59E0B','#EC4899','#ECFDF5','#065F46'],['Green','Pink','White','Yellow']);
