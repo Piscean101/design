@@ -48,10 +48,10 @@ generateLayoutBtn.addEventListener("click", (btn) => {
         paletteLength > 3 ? e.style['-webkit-text-stroke'] = `2px ${palette[2]}` : e.style['-webkit-text-stroke'] = `2px ${palette[0]}`;
     });
     fourth.forEach((e) => {
-        e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
+        e.style['-webkit-text-stroke'] = `0.5px ${palette[0]}`;
     });
     fifth.forEach((e) => {
-        e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
+        e.style['-webkit-text-stroke'] = `0.5px ${palette[0]}`;
     });
     if (templateName == 'focus') {
     } else {
