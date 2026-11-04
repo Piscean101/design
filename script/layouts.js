@@ -29,7 +29,7 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     const palette = layoutPaletteInput.value.split(',');
     var templateName = [...navLayoutOptions].filter((e) => { return e.checked });
     templateName = templateName[0].id;
-    const paletteLength = palette.length;
+    const paletteLength = Number(palette.length);
     const [first,second,third,fourth,fifth,sixth,spec] = [document.querySelectorAll(".first"),document.querySelectorAll(".second"),document.querySelectorAll(".third"),document.querySelectorAll(".fourth"),document.querySelectorAll(".fifth"),document.querySelectorAll('.sixth'),document.querySelectorAll('.spec')]
     const allLayoutObj = document.querySelectorAll(".tempObj");
 
@@ -45,13 +45,13 @@ generateLayoutBtn.addEventListener("click", (btn) => {
         e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
     });
     second.forEach((e) => {
-        e.style['-webkit-text-stroke'] = `2px ${palette[2]}`;
+        paletteLength > 3 ? e.style['-webkit-text-stroke'] = `2px ${palette[2]}` : e.style['-webkit-text-stroke'] = `2px ${palette[0]}`;
     });
     fourth.forEach((e) => {
         e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
     });
     fifth.forEach((e) => {
-        e.style['-webkit-text-stroke'] = `1px ${palette[2]}`;
+        e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
     });
     if (templateName == 'focus') {
     } else {
@@ -61,10 +61,11 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     }
     second.forEach((e) => { e.style.backgroundColor = palette[1] });
     third.forEach((e) => { e.style.backgroundColor = palette[2] });
-    paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; second.forEach((s) => { s.style.color = palette[0] }) }) : fourth.forEach((e) => { e.style.backgroundColor = palette[1] });
+    paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; second.forEach((s) => { s.style.color = palette[0] }) }) : fourth.forEach((e) => { templateName == 'brochure' ? e.style.backgroundColor = palette[0] : e.style.backgroundColor = palette[1] });
     paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[2] });
     paletteLength >= 6 ? sixth.forEach((e) => { e.style.backgroundColor = palette[5]; e.style.color = palette[1] }) : sixth.forEach((e) => { e.style.backgrondColor = palette[2] });
     fifth.forEach((e) => { e.style.color = palette[0] })
+
     switch(templateName) {
         case 'standard': 
             fourth.forEach((e) => {
