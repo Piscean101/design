@@ -177,7 +177,7 @@ addPalette('Metallic',['#0F2862','#9E363A','#091F36','#4F5F76'],['Blue','Grey','
 addPalette('Midnight',['#1E1B4B','#4C1D95','#F59E0B','#312E81'],['Purple','Yellow']);
 addPalette('Midwest Bloom',['#FFEAD3','#BFE7EA','#E89B5B','#D46743'],['Beige','Blue','Pink']);
 addPalette('Milk Lavender',['#FFFEFE','#F5F0FF','#D9CFF5','#9A84D8','#2A2141'],['Purple','White']);
-addPalette('Minimalast',['#000000','#404040','#3B82F6','#FAFAFA','#171717'],['Black','Blue','Grey','White']);
+addPalette('Minimalist',['#000000','#404040','#3B82F6','#FAFAFA','#171717'],['Black','Blue','Grey','White']);
 addPalette('Minimal Moonlight',['#FFFFFF','#F8F8FF','#D3D3D3','#A9A9A9','#696969'],['Grey','White']);
 addPalette('Mode',['#000000','#2C1A1A','#583434','#854E4E','#B26868'],['Beige','Black']);
 addPalette('Moody Sunset',['#003F5C','#58508D','#BC5090','#FF6361','#FFA600'],['Pink','Purple','Yellow']);
