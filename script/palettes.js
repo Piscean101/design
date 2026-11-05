@@ -65,7 +65,7 @@ addPalette('Alpine Glow',['#FFFFFF','#F0FFF0','#98FB98','#00FA9A','#00FF7F'],['G
 addPalette('Always True',['#A25F3E','#67342C','#04181F','#103C4F','#4C8088'],['Beige','Blue']);
 addPalette('Amethyst Haze',['#341C67','#472F5B','#DCCE40','#C4AEF4','#CCA4B4'],['Purple','Yellow']);
 addPalette('Apricot',['#6B7A8F','#F7882F','#F7C331','#DCC7AA'],['Orange','Grey','Yellow']);
-addPalette('Architect',['#952210','#c34729','#ECC8AF','#C18C5D','#373D42'],['Beige','Grey','Red']);
+addPalette('Architect',['#952210','#C34729','#ECC8AF','#C18C5D','#373D42'],['Beige','Grey','Red']);
 addPalette('Arctic Breeze',['#FFFFFF','#E0FFFF','#AFEEEE','#B0E0E6','#ADD8E6'],['Blue','White']);
 addPalette('Attention',['#FFFFFF','#F2F5F7','#C9D3DC','#FFB347','#1E2A33'],['Grey','White','Yellow']);
 addPalette('Autumn Harvest',['#B45309','#92400E','#EAB308','#FEF3C7','#451A03'],['Beige','Yellow']);
