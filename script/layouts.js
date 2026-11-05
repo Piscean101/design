@@ -36,22 +36,22 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     first.forEach((e) => {
         e.style.backgroundImage = '';
     })
-    allLayoutObj.forEach((e) => { 
-        e.style.color = palette[2];
-        // e.style['-webkit-text-stroke'] = `1px ${palette[2]}`;
-    }); 
+    // allLayoutObj.forEach((e) => { 
+    //     e.style.color = palette[2];
+    //     // e.style['-webkit-text-stroke'] = `1px ${palette[2]}`;
+    // }); 
     first.forEach((e) => { 
         e.style.backgroundColor = palette[0];
         e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
     });
     second.forEach((e) => {
-        paletteLength > 3 ? e.style['-webkit-text-stroke'] = `2px ${palette[2]}` : e.style['-webkit-text-stroke'] = `2px ${palette[0]}`;
+        paletteLength > 3 ? e.style['-webkit-text-stroke'] = `0.5px ${palette[2]}` : e.style['-webkit-text-stroke'] = `0.5px ${palette[0]}`;
     });
     fourth.forEach((e) => {
         e.style['-webkit-text-stroke'] = `0.5px ${palette[0]}`;
     });
     fifth.forEach((e) => {
-        e.style['-webkit-text-stroke'] = `0.5px ${palette[0]}`;
+        e.style['-webkit-text-stroke'] = `0.5px ${palette[1]}`;
     });
     if (templateName == 'focus') {
     } else {
@@ -65,6 +65,28 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[2] });
     paletteLength >= 6 ? sixth.forEach((e) => { e.style.backgroundColor = palette[5]; e.style.color = palette[1] }) : sixth.forEach((e) => { e.style.backgrondColor = palette[2] });
     fifth.forEach((e) => { e.style.color = palette[0] })
+
+    switch(paletteLength) {
+        case 4:
+            allLayoutObj.forEach((e) => { 
+                e.style.color = palette[3];
+            }); 
+            break;
+        case 5:
+            allLayoutObj.forEach((e) => { 
+                e.style.color = palette[4];
+            }); 
+            break;
+        case 6:
+            allLayoutObj.forEach((e) => { 
+                e.style.color = palette[5];
+            }); 
+            break;
+        default: 
+            allLayoutObj.forEach((e) => { 
+                e.style.color = palette[2];
+            }); 
+    }
 
     switch(templateName) {
         case 'standard': 

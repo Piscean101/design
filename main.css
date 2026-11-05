@@ -192,9 +192,9 @@ body {
 
 #illustrativeTemplate { width: 60vw; height: 70vh; position: relative; right: 50%; transform: translateX(30%); overflow: hidden ;}
 #illustrativeTemplate .tempObj { position: absolute; }
-#illustrativeTemplate .tempHead { top: 0; right: 0; width: 30%; height: 60%; z-index: 1}
-#illustrativeTemplate .tempHero { top: 0; left: 0; height: 70%; width:70% }
-#illustrativeTemplate .tempBody { top: 60%; left: 0; height: 40%; width: 70% }
+#illustrativeTemplate .tempHead { top: 0; right: 0; width: 35%; height: 60%; z-index: 1}
+#illustrativeTemplate .tempHero { top: 0; left: 0; height: 70%; width:65% }
+#illustrativeTemplate .tempBody { top: 60%; left: 0; height: 40%; width: 65% }
 #illustrativeTemplate .tempFoot { width: 100%; height: 70%; top: 100%;  z-index: 40 }
 
 #newsletterTemplate { width: 100%; height: 600%; transform: translateY(43%); }
@@ -208,7 +208,7 @@ body {
 #actionTemplate { width: 60vw; height: 65vh; position: relative; right: 50%; transform: translateX(30%); }
 #actionTemplate .tempObj { position: absolute }
 #actionTemplate .tempHero { top: 0; left: 0; height: 100%; width: 100%; z-index: 1 }
-#actionTemplate .tempAction { bottom: 1rem; bottom: 2rem; height: 20%; width: 40% ; z-index: 2; padding: 0.5rem; left: 50%; transform: translateX(-50%); }
+#actionTemplate .tempAction { bottom: 1rem; bottom: 2rem; height: 20%; width: 55% ; z-index: 2; padding: 0.5rem; left: 50%; transform: translateX(-50%); }
 
 #focusTemplate { width: 60vw; height: 65vh; position: relative; right: 50%; transform: translateX(30%); }
 #focusTemplate .tempObj { position: absolute }
@@ -317,9 +317,12 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
         top: -10px;
         font-size: 1.5rem;
     }
-    #actionTemplate, #canvasTemplate, #illustrativeTemplate {
+    #actionTemplate, #focusTemplate, #illustrativeTemplate {
         width: 85vw;
         transform: translateX(20%);
+    }
+    #focusTemplate, #standardTemplate, #actionTemplate, #illustrativeTemplate {
+        top: 5%;
     }
     #standardTemplate {
         width: 85vw;
