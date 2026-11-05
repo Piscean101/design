@@ -42,7 +42,7 @@ generateLayoutBtn.addEventListener("click", (btn) => {
     // }); 
     first.forEach((e) => { 
         e.style.backgroundColor = palette[0];
-        e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
+        // e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
     });
     second.forEach((e) => {
         paletteLength > 3 ? e.style['-webkit-text-stroke'] = `0.5px ${palette[2]}` : e.style['-webkit-text-stroke'] = `0.5px ${palette[0]}`;
