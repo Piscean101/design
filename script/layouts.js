@@ -115,9 +115,12 @@ generateLayoutBtn.addEventListener("click", (btn) => {
         break;
         case 'brochure':
             paletteLength >= 4 ? fifth.forEach((e) => { e.style.backgroundColor = palette[2] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[0] })
-            paletteLength >= 5 ? fifth.forEach((e) => { e.style.color = palette[4] }) : fifth.forEach((e) => { e.style.color = palette[2] });
+            paletteLength >= 5 ? fifth.forEach((e) => { e.style.color = palette[4] }) : fifth.forEach((e) => { e.style.color = palette[0] });
             break;
         case 'illustrative':
+            second.forEach((e) => {
+                e.style.color = palette[0];
+            })
             third.forEach((e) => {
                 paletteLength >= 4 ? e.style.color = palette[3] : null;
                 e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
