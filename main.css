@@ -292,7 +292,7 @@ body #galleryTemplate .tempHero { top: 10%; height: 90%; width: 100%; display: f
 @media screen and (max-width: 800px) {
     .tempObj { font-size: 120%; letter-spacing: 2px; }
     .tempObj.tempHero { font-size: 140% }
-    label { letter-spacing: 1.4px }
+    label { font-size: 120%; letter-spacing: 3px }
     body .paletteBackground {
         position: absolute;
         right: 1rem;

@@ -59,12 +59,17 @@ generateLayoutBtn.addEventListener("click", (btn) => {
             e.style.boxShadow = ``;
         });
     }
+
     second.forEach((e) => { e.style.backgroundColor = palette[1] });
+    
     third.forEach((e) => { e.style.backgroundColor = palette[2] });
-    paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; second.forEach((s) => { s.style.color = palette[0] }) }) : fourth.forEach((e) => { templateName == 'brochure' ? e.style.backgroundColor = palette[0] : e.style.backgroundColor = palette[1] });
-    paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; e.style.color = palette[0] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[2] });
+   
+    paletteLength >= 4 ? fourth.forEach((e) => { e.style.backgroundColor = palette[3]; }) : fourth.forEach((e) => { templateName == 'brochure' ? e.style.backgroundColor = palette[0] : e.style.backgroundColor = palette[1] });
+    
+    paletteLength >= 5 ? fifth.forEach((e) => { e.style.backgroundColor = palette[4]; }) :
+    paletteLength >= 4 ? fifth.forEach((e) => { e.style.backgroundColor = palette[3]; }) : fifth.forEach((e) => { e.style.backgroundColor = palette[2] });
+    
     paletteLength >= 6 ? sixth.forEach((e) => { e.style.backgroundColor = palette[5]; e.style.color = palette[1] }) : sixth.forEach((e) => { e.style.backgrondColor = palette[2] });
-    fifth.forEach((e) => { e.style.color = palette[0] })
 
     switch(paletteLength) {
         case 4:
@@ -85,9 +90,12 @@ generateLayoutBtn.addEventListener("click", (btn) => {
         default: 
             allLayoutObj.forEach((e) => { 
                 e.style.color = palette[2];
-            }); 
+            });
+        break; 
     }
 
+    fifth.forEach((e) => { e.style.color = palette[2] });
+    
     switch(templateName) {
         case 'standard': 
             fourth.forEach((e) => {
@@ -101,12 +109,26 @@ generateLayoutBtn.addEventListener("click", (btn) => {
                 e.style['-webkit-text-stroke'] = `1px ${palette[0]}`;
 
             });
-            spec.forEach((e) => {
-                e.style.color = palette[1];
-            })
+            // spec.forEach((e) => {
+            //     e.style.color = palette[1];
+            // });
         break;
+        case 'brochure':
+            paletteLength >= 4 ? fifth.forEach((e) => { e.style.backgroundColor = palette[2] }) : fifth.forEach((e) => { e.style.backgroundColor = palette[0] })
+            paletteLength >= 5 ? fifth.forEach((e) => { e.style.color = palette[4] }) : fifth.forEach((e) => { e.style.color = palette[2] });
+            break;
+        case 'illustrative':
+            third.forEach((e) => {
+                paletteLength >= 4 ? e.style.color = palette[3] : null;
+                e.style['-webkit-text-stroke'] = `1px ${palette[1]}`;
+            });
+            fifth.forEach((e) => {
+                paletteLength >= 4 ? e.style.backgroundColor = palette[3]: null;
+                
+            })
         default: break;
     }
+    
 });
 
 const layout = () => {}

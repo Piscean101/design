@@ -56,7 +56,8 @@ function statistics() {
 }
 
 // BROWSE AND TEST COLOR SCHEMES
-// ORANGE RED BLACK PURPLE
+// AUDIT: BEIGE
+// ADD: ORANGE RED BLACK PURPLE
 
 
 addPalette('Abstract',['#009FDD','#D8036F','#FFF20B','#000200'],['Black','Blue','Pink','Yellow']);
@@ -64,7 +65,7 @@ addPalette('Activate',['#BEEF00','#FF0028','#657A00','#1400C6'],['Blue','Green',
 addPalette('Alpine Glow',['#FFFFFF','#F0FFF0','#98FB98','#00FA9A','#00FF7F'],['Green','White']);
 addPalette('Always True',['#A25F3E','#67342C','#04181F','#103C4F','#4C8088'],['Beige','Blue']);
 addPalette('Amethyst Haze',['#341C67','#472F5B','#DCCE40','#C4AEF4','#CCA4B4'],['Purple','Yellow']);
-addPalette('Apricot',['#6B7A8F','#F7882F','#F7C331','#DCC7AA'],['Orange','Grey','Yellow']);
+addPalette('Apricot',['#6B7A8F','#F7882F','#F7C331','#DCC7AA'],['Beige','Orange','Grey','Yellow']);
 addPalette('Architect',['#952210','#C34729','#ECC8AF','#C18C5D','#373D42'],['Beige','Grey','Red']);
 addPalette('Arctic Breeze',['#FFFFFF','#E0FFFF','#AFEEEE','#B0E0E6','#ADD8E6'],['Blue','White']);
 addPalette('Attention',['#FFFFFF','#F2F5F7','#C9D3DC','#FFB347','#1E2A33'],['Grey','White','Yellow']);
